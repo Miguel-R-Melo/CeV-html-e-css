@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Vídeos com HTML5</title>
+    </head>
+    <body>
+        <!--Selfhosted-->
+        <!--Pexels para vídeos sem D.A-->
+        <!--Tipos de vídeo: MP4, M4V, WEBM, OGV-->
+        <!--Importante ter vários vídeos em diferentes foramatos, por causa da compatibilidade.-->
+        <h1>Inserindo vídeos hospedando localmente</h1>
+        <p>Este vídeos está hospedado no meu próprio servidor</p>
+        <!--<video src="midia/meuvideo (1).webm"width = "500" controls></video>-->
+        <!--Porém depende de cada navegador.-->
+        <video width = "560px" poster = "imagens/capa.png" controls autoplay loop>
+            <source src = "midia/meuvideo.webm" type = "video/webm">
+            <source src = "midia/Meuvideo-1.m4v" type = "video/mp4">  <!--A ordem importa também!!Se não for compatível ele baixa o debaixo.-->
+            <source src = "midia/meuvideo (1).ogv" type = "video/ogg">
+            <source src = "midia/meuvideo.mp4" type = "video/mp4">
+        </video>
+        <!--Esta tag e método consome muita banda de internet, o que custa bastante para o cliente.-->
+        <p>Caso seu navegador não tenha baixado o áudio, links:</p>
+         <a href = "midia/meuvideo.mp4" target = "_blank" type = "external">Mp4</a><br>
+         <a href="midia/meuvideo.webm">WebM</a><br>
+         <a href="midia/Meuvideo-1.m4v">M4V</a><br>
+         <a href="midia/meuvideo (1).ogv">OGV</a><br>
+         <!--Adicionar vídeos por hospedagem é mehor-->
+         <h1>Inserido vídeos do YouTube</h1>
+         <iframe width="560px" height="315" src="https://www.youtube.com/embed/UWNTmUwNWhI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><!--Com isso o user vai estar consumindo dados do servidor do YouTuBbe não do servidor do cliente.-->
+         <!--Vimeo(ele pode limitar o acesso para pessoas exclusivas!) e Youtube são opções para hospedagem de vídeos. O Vimeo tem opções melhores de hospedagem , tem uma qualidade excelente, porém se a internet do usuário não for muito boa, o vídeo pode travar.-->
+         <!--Use o vimeo-->
+    </body>
+</html>

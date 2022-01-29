@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatação de textos</title>
+    <style>
+        mark{
+            background-color: greenyellow;
+        }
+    </style>
+    <!--Para todos os "marks" ficarem da mesma cor.-->
+</head>
+<body>
+    <h1>Principais formatações</h1>
+    <h2>Negrito:</h2>   <!--<b> deixa em negrito-->
+    <p>Nesta frase temos uma<br> parte em <b>negrito</b> usando a tag &lt;b&gt;</p><!--<b> é uma tag não semântica.-->
+    <!--Abaixo forma semântica.-->
+    <p>Nesta temos uma parte em <strong>Destaque</strong>, só utilizar a tag &lt;strong&gt;</p>
+    <h2>Itálico:</h2>
+    <p><i>Termo em itálico</i>, basta usar a tag &lt;i&gt;</p><!--Não é uma forma semântica.-->
+    <p><em>Termo em itálico</em>, basta usar a tag &lt;em&gt; </p><!--É uma forma semântica-->
+    <h2>Texto marcado:</h2>
+    <p><mark>Podemos criar também um texto marcado usando a tag</mark> &lt;mark&gt;</p><!--O VsCode ainda não reconhece sem os colchetes angulares!-->
+    <!--Para mudar a cor da marcação se utiliza CSS, como abaixo:-->
+    <p><mark style="background-color: lawngreen;">Cor diferente</mark></p><!--Isto é forma!!--><!--Essa tag em CSS é específica para esta tag, as outras não herdam.-->
+    <h2>Texto grande e pequeno</h2>
+    <p>Estamos criando um <big>texto grande</big> e um <small>texto pequeno</small> neste parágrafo.</p>
+    <h2>Texto deletado:</h2>
+    <p>Podemos marcar um <del>texto como excluído</del>, para indicar que ele dever ser lido, mas não considerado.</p>
+    <h2>Texto inserido:</h2>
+    <p>Podemos marcar um <ins>texto como inserido</ins> para dar uma ênfase e indicar que ele foi adicionado depois.</p>
+    <p><u>Existe também o sublinhado</u></p>
+    <h2>Texto subrescrito:</h2>
+    <p>Coisas do tipo x<sup>20</sup> +3</p>
+    <h2>Texto subescrito</h2>
+    <p>Para inserir coisas do tipo H<sub>2</sub>O</p>
+</body>
+</html>
+
+
+    

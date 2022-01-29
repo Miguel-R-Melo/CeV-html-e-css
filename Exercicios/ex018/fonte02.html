@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes externas</title>
+    <style>
+        @font-face {
+            font-family: 'Cbm';
+            src: url(fontes/CloisterBlack.ttf) format('truetype'); /* Tipos de format: OpenType(otf), TrueType(ttf)
+            embedopentype, truetype-aat(apple Advanced Typografy) e svg*/
+        
+            /*Depende do navegador se aceita .ttf ou .otf (melhor colocar os dois)*/
+        }
+        body{
+            font-family: 'Cbm', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        h1{
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 3em;
+        }
+        p{
+            font-size: 3em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Título</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt impedit quam pariatur molestiae praesentium nemo repudiandae officiis amet corrupti quia laborum aspernatur deleniti eius magnam quaerat earum, iusto cum labore!</p>
+</body>
+</html>
+

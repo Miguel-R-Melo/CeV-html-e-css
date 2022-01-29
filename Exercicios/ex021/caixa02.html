@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+    <style>
+        body{
+            margin: 0px;
+            font-family: sans-serif;
+            background-color: dimgray;
+        }
+
+        h1{
+            border-top-color: red;
+            boder-top-width: 10px;
+            box-shadow: 3px 4px 3px black;
+        }
+        header{
+            background-color: white;
+            padding:  10px;
+            margin:  10px;
+        }
+        nav{
+            background-color: gray;
+            padding: 3px;
+            color:  white;
+            box-shadow: 5px 5px 5px rgba(0, 0, 0,0, 493); /*Ordem: deslocamento horizontal/ vertical/ Embaçamento/Espalhamento /// sombra Inset =  sombra interna/// outset = para fora*/
+        }
+        nav > a{
+            color:  white;
+            font-weight: bold;
+            text-decoration: none;
+            margin-right: 30px;
+
+        }
+        nav > a:hover{
+            text-decoration: underline;
+
+        }
+        main{
+            background-color: white;        
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px 20px 20px 10px;
+            box-shadow: 2px 2px 3px 2px gold;
+            /*Sentido horário
+            Também é possível: 
+            border-radius: 10px 20px;
+            border-radius: 10px;
+            */
+        }
+        footer{
+            color:  white;
+            background-color: black;
+            text-align: center;
+            padding:  5px;
+            margin:  0px;
+        }
+        article{
+            padding:  5px;
+            background-color: lightgray;
+        }
+        article > aside{
+            background-color: darkgray;
+        }
+        footer > p{
+            margin: 0;
+        }
+        #bola{
+            height: 100px;
+            width: 100px;
+            margin: 10px;
+            background-color: white;
+            border-radius: 50%;
+        }
+    </style> 
+</head> 
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">l</a>
+            <a href="#">i</a>
+            <a href="#">n</a>
+            <a href="#">k</a>
+            <a href="#">s</a>
+            <a href="#cre">Cre</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id='assuntos'>
+          
+        </section>
+        <section id='noticias'>
+            <article>
+                <h2>Notícias sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora tenetur unde ipsa ab, harum amet! Corporis beatae expedita sunt, quae, fuga magni, ratione iusto consequuntur laborum aliquam vel sed enim.</p>
+                <aside>
+                    <p>Artigo escrito por José da Silva</p>
+                </aside>
+            </article>
+            <article>
+                
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>Desenvolvido por @Miguel</p>
+        <a href="#top">Topo</a>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus ratione eaque laudantium, perspicinditiis repellendus odio consequuntur eligendi!</p>
+    </footer>
+
+    <div id="bola">
+        <p name="cre">CRDT</p>
+    </div>
+</body>
+</html>
+

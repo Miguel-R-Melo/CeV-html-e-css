@@ -1,0 +1,281 @@
+<!--<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/logotbooks.jpeg" type="image/x-icon">
+    <title>T-Books</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Merriweather&family=Noto+Serif:ital@1&family=Quicksand:wght@500&display=swap');
+        #h1{
+            font-family: 'Great Vibes', cursive;
+            font-family: 'Merriweather', serif;
+            font-family: 'Noto Serif', serif;
+            font-family: 'Quicksand', sans-serif;
+        }
+        @media only screen and (max-width: 599px){
+            body{
+                margin: 0px;
+            }
+            
+            :-webkit-input-placeholder{
+                text-align: center;
+            }
+
+            #img{
+                width: 20px;
+                height: 20px;
+            }
+
+            #imgtino{
+                height: 300px;
+                width: 320px;
+                margin-left: 20px;
+                margin-bottom: 15px;
+                border-radius: 30px;
+            }
+
+            #idh{
+                color:black;
+                text-decoration: none;
+            }
+
+            #nbut{
+                border: ridge;
+                color: white;
+                background-color: black;
+                border-radius: 8px;
+                width: 75px;
+            }
+
+            #ide{
+                height: 30px;
+                width: 230px;
+            } 
+
+            #ids{
+                height: 30px;
+                width: 230px;
+                margin-bottom: 10px;
+            }
+
+            #divenv{
+                display: flex;
+                justify-content: center;
+                margin: auto;
+            }
+
+            #enviar{
+                color: white;
+                background-color: green;
+                height: 35px;
+                width: 140px;
+                border-radius: 5px; 
+            }
+
+            #enviar:hover{
+                color: #fff;
+                background-color: #000;
+            }
+
+            .header{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: rgb(26, 201, 26);
+                height: 65px;
+                margin-bottom: 4px;
+            }
+
+            .divimg{
+                display: flex;
+                justify-content: center;
+                margin: 0 auto;
+            }
+
+            .forms{
+                display: flex;
+                justify-content: center;
+            }
+
+            .imagem{
+                display: flex;
+                justify-content: center;
+                margin-bottom: 25px;
+            }
+            
+            .email{
+                margin-bottom: 13px;
+            }
+
+            .senha{
+                margin-bottom: 10px;
+            }
+        }
+
+        @media only screen and (min-width: 600px){
+            body{
+                margin: 0px;
+            }
+
+            header{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: rgb(26, 201, 26);
+                margin-bottom: 10px;
+                height: 60px;
+            }
+
+            ::-webkit-input-placeholder{
+                text-align: center;
+            }
+
+            #idh{
+                color: black;
+                text-decoration: none;
+            }
+
+            #nbut{
+                border: ridge;
+                color: white;
+                background-color: black;
+                border-radius: 8px;
+                width: 75px;
+            }
+
+            #imgtino{
+                height: 330px;
+                width: 320px;
+                margin-bottom: 20px;
+                border-radius: 30px;
+            }
+
+            #ide{
+                height: 25px;
+                width: 310px;
+            }
+
+            #ids{
+                height: 25px;
+                width: 310px;
+                margin-bottom: 10px;
+            }
+
+            #enviar{
+                position: relative;
+                left: 80px;
+                color: white;
+                background-color: royalblue;
+                border-radius: 5px;
+                height: 35px;
+                width: 140px;
+                margin-bottom: 15px;
+            }
+
+            #enviar:hover{
+                background-color: #fff;
+                color: #000;
+            }
+
+        .header{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: -10px;
+        }
+
+        .forms{
+                display: flex;
+                justify-content: center;
+            }
+
+        .divimg{
+            position: relative;
+            left: -10px;
+            display: flex;
+            justify-content: center;
+            margin: 0 auto;
+        }    
+
+        .imagem{
+            display: flex;
+            justify-content: center;
+            margin-bottom: 25px;
+        }
+
+        .email{
+            position: relative;
+            left: -10px;
+            margin-bottom: 15px;
+        }
+
+        .senha{
+            position: relative;
+            left: -10px;
+            margin-bottom: 15px;
+        }
+
+        }
+
+    </style>
+</head>
+<body>
+    <header>    
+        <div class="header">
+            <a id="idh" href="./index.html" target="self" rel="prev"> 
+                <h1 id="h1">Cadastro</h1>
+            </a>
+        </div>
+    </header>
+    <main>
+
+        <div id='div' style='margin-bottom: 15px;'>
+            <button id='nbut'>
+                <span id='span'>Modo escuro</span>
+            </button>
+        </div>
+
+        <div class="divimg">
+            <img id="imgtino" src="logotino.jpg"
+            alt="Imagem Tino" onerror="">
+        </div> 
+
+        <div class="forms">
+            <form action="POST">
+                <div class="email">
+                <input id="ide" type="email" placeholder="Digite seu email" required style="text-align: center;">
+                </div>
+
+                <div class="senha">
+                    <input id="ids" type="password" placeholder="Digite uma senha" required style='text-align: center;'>
+                </div>
+
+                <div id="divenv">
+                    <input id="enviar" type="submit" value="Cadastrar-me" style='cursor: pointer;'><br>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <script>
+        document.getElementById('nbut').addEventListener('click', clicar)
+        document.getElementById('nbut').addEventListener('dblclick', dbcl)
+        function clicar(){
+            document.body.style.background='black'
+            document.getElementById('nbut').innerText='Modo Claro'
+            document.getElementById('nbut').style.background='white'
+            document.getElementById('nbut').style.color='black'
+        }
+
+        function dbcl(){
+            document.body.style.background='white' 
+            document.getElementById('nbut').innerText='Modo Escuro'
+            document.getElementById('nbut').style.background='black'
+            document.getElementById('nbut').style.color='white'
+        }
+    </script>
+</body>
+
+</html>-->

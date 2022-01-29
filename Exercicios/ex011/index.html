@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em html5</title>
+</head>
+<body>
+    <h1>Imagens dinâmicas</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumenta e diminua o tamanha do seu navegador</p>
+    <!--/* medias queries exemples
+          480px // Extra small screen
+          768px // Small screen
+          992px // Medium screen
+          1200px // Large screen
+          1600px // Extra Large screen
+          1900px // Extra Large screen */ -->
+    <picture>
+        <source media="(max-width: 750px )" srcset="imagens/pequena.png" type="image/png">
+        <source media="(max-width:1050px )" srcset="imagens/media.png" type="image/png">
+        <img src="imagens/grande.png" alt="imagem flexível">
+    </picture>
+    <h1>Reproduzindo aúdios</h1>
+        <audio src="midfg/music.mp3" controls autoplay></audio>
+        <!--Mp3 Wav OGG--> <!--Arquivo Wav é muito pesado!!-->
+        <!--Outra maneira mais completa:-->
+        <audio preload="auto" autoplay loop> <!--Auto para mostrar o áudio só depois de carregar todos os áudios/Metadata para carregar informações "base" data, tamanho do arquivo, etc/ None soemnte quando o usuário apertar -->
+            <source src = "midfia/music.mp3" type = "audio/mpeg"> <!--A ordem importa, se ele não conseguir carregar o primeiro ele irá carregar o segundo.-->
+            <source src="midia/guanacast-33.mp3" type="audio/mpeg">
+        </audio>
+        <!--Caso não carregue nenhum:-->
+        <p>Infelizmente seu nvegador não carregou nenhum áudio, baixe aqui:</p>
+           <a href = "midia/music.mp3" dowload = "music.mp3" type = "dowload/mp3">Primeiro áudio</a>
+</html>
+

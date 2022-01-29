@@ -1,0 +1,338 @@
+<!--<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/logotbooks.jpeg" type="image/x-icon">
+    <title>Login</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+        #h1 {
+            font-family: 'Nunito', sans-serif;
+        }
+
+        @media only screen and (max-width:599px) {
+
+            body {
+                margin: 0px;
+            }
+
+            header {
+                background-color: yellow;
+                display: flex;
+                justify-content: center;
+            }
+
+            ::-webkit-input-placeholder {
+                text-align: center;
+            }
+
+            #h1 {
+                display: inline;
+                text-align: center;
+                margin: 5px;
+            }
+
+            #div{
+                margin: 10px 0px 1px 5px;
+            }
+
+            #nbut{
+                border: ridge;
+                color: white;
+                background-color: black;
+                border-radius: 8px;
+                width: 75px;
+            }
+
+            #divcad {
+                display: flex;
+                justify-content: right;
+            }
+
+            #acad {
+                height: 30px;
+                width: 90px;
+                text-decoration: none;
+                color: blue;
+            }
+
+            #email {
+                height: 30px;
+                width: 250px;
+            }
+
+            #senha {
+                height: 30px;
+                width: 250px;
+            }
+
+            #divenv {
+                display: flex;
+                justify-content: center;
+                margin: auto;
+                padding-left: 35px;
+            }
+
+            #enviar {
+                color: white;
+                background-color: rgb(0, 200, 0);
+                margin-bottom: 25px;
+                height: 40px;
+                width: 150px;
+                border-radius: 4px;
+                padding-left: 10px;
+            }
+
+            #enviar:hover {
+                color: black;
+                background-color: white;
+            }
+
+            .header {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-right: -50px;
+            }
+
+            .divmenu {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+            }
+
+            .container {
+                margin-left: 1px;
+            }
+
+            .forms {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .pic {
+                position: relative;
+                left: 10px;
+                height: 290px;
+                width: 350px;
+                margin-bottom: 5px;
+                padding-left: 55px;
+                border-radius: 30px;
+            }
+
+            .fig {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .email {
+                width: 200px;
+                margin: 0px 0px 15px 0px;
+            }
+
+            .senha {
+                width: 200px;
+                margin: 0px 0px 10px 0px;
+            }
+
+            .cadastro {
+                display: flex;
+                justify-content: center;
+                margin: 0 auto;
+            }
+        }
+
+        /*Mobile*/
+
+        @media only screen and (min-width: 600px) {
+            body {
+                margin: 0px;
+            }
+
+            header {
+                background-color: yellow;
+                height: 70px;
+                margin-bottom: 20px;
+            }
+
+            ::-webkit-input-placeholder {
+                text-align: center;
+            }
+
+            #h1 {
+                margin: 0px 0px 50px -15px;
+                text-align: center;
+                padding: 19px 0px 100px 0px;
+            }
+
+            #nbut{
+                border: ridge;
+                color: white;
+                background-color: black;
+                border-radius: 8px;
+                width: 75px;
+            }
+
+            #laem {
+                position: relative;
+                left: -50px;
+            }
+
+            #lase {
+                position: relative;
+                left: -50px;
+            }
+
+            #email {
+                position: relative;
+                left: -55px;
+                height: 25px;
+                width: 310px;
+            }
+
+            #senha {
+                position: relative;
+                left: -55px;
+                height: 25px;
+                width: 310px;
+                margin-bottom: 10px;
+            }
+
+            #enviar {
+                position: relative;
+                left: 10px;
+                margin-bottom: 17.4px;
+                height: 39px;
+                width: 180px;
+                color: white;
+                background-color: rgb(25, 170, 25);
+                border-radius: 4px;
+                cursor: pointer;
+            }
+
+            #enviar:hover {
+                color: black;
+                background-color: white;
+            }
+
+            #acad {
+                text-decoration: none;
+                color: rgb(29, 29, 190);
+            }
+
+            .container {
+                margin-left: 1px;
+            }
+
+            .forms {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .fig {
+                display: flex;
+                justify-content: center;
+                margin: 0px 0px 35px 0px;
+            }
+
+            .pic {
+                display: flex;
+                justify-content: center;
+                width: 270px;
+                height: 270px;
+                border-radius: 10px;
+            }
+
+            .email {
+                width: 200px;
+                margin: 0px 0px 15px 0px;
+            }
+
+            .senha {
+                width: 200px;
+                margin: 0px 0px 15px 0px;
+            }
+
+            .cadastro {
+                display: flex;
+                justify-content: center;
+            }
+
+        }
+
+        /*Normal*/
+    </style>
+</head>
+
+<body>
+    <header id='hea'>
+        <div class="header">
+            <h1 id="h1">Login</h1>
+        </div>
+    </header>
+
+    <main>
+
+        <div id='div'>
+            <button id='nbut' style='cursor: pointer;'>
+                <span id='span'>Modo noturno</span>
+            </button>
+        </div>
+
+        <div class="container">
+            <figure class="fig">
+                <img class="pic" src="logotino.jpg" alt="Foto Tino">
+            </figure>
+            <div class="forms">
+                <form action="tbooks_back/tbooks_back/login_fire.py" >
+                    <div class="email">
+                        <input id="email" type="email" name="email" required placeholder="Digite seu email">
+                    </div>
+                    <div class="senha">
+                        <input id="senha" type="text" name="senha" placeholder="Digite seu id" required>
+                    </div>
+                    <div id="divenv">
+                        <input id="enviar" type="submit" value="Entrar" style='cursor: pointer;'>
+                    </div>
+                </form>
+            </div>
+            <div class="cadastro">
+                <span  id='s' style='color: black;'><strong>Não é cadastrado(a)?</strong><a id="acad" href="cadastro.html">Cadastre-se</a></span>
+            </div>
+        </div>
+
+        <a href="menu.html">Menu</a>
+
+    </main>
+
+    <script>
+        var mc = document.getElementById('span')
+        document.getElementById('nbut').addEventListener('click', clicar)
+        document.getElementById('nbut').addEventListener('dblclick', dbcl)
+        function clicar(){
+            document.body.style.background='black'
+            document.getElementById('s').style.color='white'
+            document.getElementById('acad').style.color='blue'
+            document.querySelector('span#span').innerText='Modo Claro'
+            document.getElementById('nbut').style.background='white'
+            document.getElementById('nbut').style.color='black'
+        }
+
+        function dbcl(){
+            document.body.style.background='white'
+            document.querySelector('span#span').innerText='Modo noturno'
+            document.getElementById('s').style.color='black'
+            document.getElementById('nbut').style.background='black'
+            document.getElementById('nbut').style.color='white'
+        }
+    </script>
+</body>
+</html>-->
