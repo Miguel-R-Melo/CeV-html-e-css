@@ -88,7 +88,7 @@
     }
 
     #container_video{
-        margin: 0px -20px 30px -20px;
+        margin: 0px auto 30px auto;
         padding: 20px;
         padding-bottom: 59%;
         position: relative;
