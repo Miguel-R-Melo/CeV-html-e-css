@@ -18,6 +18,10 @@
         background-image: linear-gradient(to bottom, #2dce73, #256d45);
     }
 
+    #header_page > p{
+        padding-bottom: 10em;
+    }
+
 
     #h1{
         padding-top: 0.2em;
@@ -27,6 +31,7 @@
 
     #ul_he{
         padding-left: 0;
+        margin:  0;
     }
 
     #content{
@@ -199,6 +204,7 @@
         cursor: pointer;
         border-radius: 0.2em;
         background-color: rgba(255, 255, 255, 0.301);
+        transition:  1s;
     }
 
     #content{
@@ -265,7 +271,7 @@
     #container_video{
         margin: 0px auto 30px auto;
         padding: 20px;
-        padding-bottom: 59%;
+        padding-bottom: 40%;
         position: relative;
     }
 
@@ -274,7 +280,7 @@
         top: 5%;
         left: 5%;
         width: 90%;
-        height: 90%;
+        height: 100%;
     }
 
     #ul_fim{
