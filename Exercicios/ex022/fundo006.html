@@ -1,42 +1,42 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style> /*Mesmo tendo uma imagem de fundo, o ideal é colocar uma cor de fundo também!*/
-        body{
+ <!DOCTYPE html>
+ <html lang="pt-br">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Fundo fixo de tela</title>
+     <style>
+         body{
             height: 97vh;
-            background-image: url("imagens/wallpaper002.jpg");
             background-repeat: no-repeat;
             background-position: center top;
-            background-size: cover; /*Ajuda, mas distorce a imagem*/
-            /*
-                Possíveis valores para o background-size:
-                
-                1.Auto(Padrão)
-                2.Contain(Sempre deixa a imagem 100% exibida, sem nenhum corte)
-                3.Cover (Cobrir totalmente, porém corta alguns pontos da imagem)
-            */
-            background-color: black;
-        }
-        main{
-            width: 400px;
-            padding: 10px;
-            margin: auto; 
+            background-image: url('imagens/wallpaper002.jpg');
+            background-color: black; /*O ideal é sempre configurar uma cor de fundo*/
+            /*background-size: 100% 100%;*/ /*Resolve o problema, mas distorce a imagem*/
+            background-size: cover; /*auto(padrão), contain(faz a imagem ser 100% exibida), cover(cobre a tela inteira, mas corta algumas partes) */
+            background-attachment: fixed;/*Vínculo*/
+            /*scroll(O fundo rola com o conteúdo), fixed*/
+            /*Shorthand: color, image, position, repeat, [size], attachment*/
+            background: black url('imagens/wallpaper002.jpg') center center no-repeat fixed;
+            background-size: cover;
+            /*O size ainda não é aplicado*/
+         }
+         main{
+            width:  400px;
+            padding:  10px;
+            margin: auto;
             background-color: white;
-            border: 1px solid red;
+            border: 1px solid darkblue;
             border-radius: 15px;
-        }
-    </style>
-</head>
-<body>
-    <main>
-        <h1>Teste de imagem de fundo</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla soluta voluptatibus vero doloremque quia unde ea nesciunt similique modi, nemo explicabo voluptas, dicta eaque aperiam asperiores aliquid quidem! Deserunt, quos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum sed molestiae omnis autem amet officia at commodi, exercitationem illum minus eveniet temporibus provident perferendis porro. Eveniet eaque sit corrupti fugiat.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem minus sunt nostrum, expedita animi optio dolore id maxime molestias dolores recusandae? Aut harum earum, quod sed unde molestias dicta odit.
-        </p>
-    </main>
-</body>
-</html>
+         }
+     </style>
+ </head>
+ <body>
+     <main>
+         <h1>Teste de imagem de fundo</h1>
+         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat, aspernatur, ipsum? Voluptatum soluta, voluptas dolorem quos maiores expedita obcaecati sed. Sunt ex quasi quia unde pariatur voluptas architecto tenetur quibusdam. Lorem ipsum, dolor sit amet consectetur, adipisicing elit. Molestiae tenetur, esse quam quidem fugit dicta, totam, velit modi tempore placeat laboriosam. Nisi rerum fuga quisquam incidunt nam modi molestias! Libero. Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus ipsa soluta nihil provident quasi rem deserunt voluptatum quaerat, blanditiis architecto minima, similique et ipsam expedita ex, quas voluptatibus quia? Necessitatibus! </p>
+         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat, aspernatur, ipsum? Voluptatum soluta, voluptas dolorem quos maiores expedita obcaecati sed. Sunt ex quasi quia unde pariatur voluptas architecto tenetur quibusdam. Lorem ipsum, dolor sit amet consectetur, adipisicing elit. Molestiae tenetur, esse quam quidem fugit dicta, totam, velit modi tempore placeat laboriosam. Nisi rerum fuga quisquam incidunt nam modi molestias! Libero. Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus ipsa soluta nihil provident quasi rem deserunt voluptatum quaerat, blanditiis architecto minima, similique et ipsam expedita ex, quas voluptatibus quia? Necessitatibus! </p>
+         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat, aspernatur, ipsum? Voluptatum soluta, voluptas dolorem quos maiores expedita obcaecati sed. Sunt ex quasi quia unde pariatur voluptas architecto tenetur quibusdam. Lorem ipsum, dolor sit amet consectetur, adipisicing elit. Molestiae tenetur, esse quam quidem fugit dicta, totam, velit modi tempore placeat laboriosam. Nisi rerum fuga quisquam incidunt nam modi molestias! Libero. Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus ipsa soluta nihil provident quasi rem deserunt voluptatum quaerat, blanditiis architecto minima, similique et ipsam expedita ex, quas voluptatibus quia? Necessitatibus! </p>
+         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat, aspernatur, ipsum? Voluptatum soluta, voluptas dolorem quos maiores expedita obcaecati sed. Sunt ex quasi quia unde pariatur voluptas architecto tenetur quibusdam. Lorem ipsum, dolor sit amet consectetur, adipisicing elit. Molestiae tenetur, esse quam quidem fugit dicta, totam, velit modi tempore placeat laboriosam. Nisi rerum fuga quisquam incidunt nam modi molestias! Libero. Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus ipsa soluta nihil provident quasi rem deserunt voluptatum quaerat, blanditiis architecto minima, similique et ipsam expedita ex, quas voluptatibus quia? Necessitatibus! </p>
+     </main>
+ </body>
+ </html>

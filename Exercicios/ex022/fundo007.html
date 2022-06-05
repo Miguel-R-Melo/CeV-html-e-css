@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Alinhamento vertical</title>
+	<style>
+		#container{
+			background-color: purple;
+			background-image:  url('imagens/target001.png');
+			background-repeat: no-repeat;
+			background-size: 100% 100%;
+			position: relative;
+			height: 90vh;
+			padding: 10px;
+			
+		}
+
+		#conteudo{
+			background-image:  url('imagens/target001.png');
+			
+			background-size: 100% 100%;
+			position: absolute;
+			height:  200px;
+			width:  400px;
+			/*margin:  auto; Alinhamento horizontal*/
+			background-color: yellow;
+			
+			left: 50%;/*50% a partir do canto superior esquerdo*/
+			top: 50%;
+			transform: translate(-50%, -50%);/*20px para direita e 20px para baixo(esquerda e para cima o valor é negativo*/
+		}
+
+		.box{
+			background: red url() center center no-repeat cover scroll;
+		}
+	</style>
+</head>
+<body>
+	<section id='container'>
+		<article id='conteudo'>
+			
+		</article>
+	</section>
+</body>
+</html>
+
+
+Ctrl Q
